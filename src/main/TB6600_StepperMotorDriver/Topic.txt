@@ -1,0 +1,13 @@
+Notes:
+
+Stepper motor drives to home position:
+    The motor should drive backwards until the homing switch is reached, 
+    if this happens the motor should drive a few stepps forward to release the switch and stay in this position (home-position).
+    
+    
+Stepper motor drives to view position:
+    Bevore the motor starts to turn forward he has to execute a homing sequence, for a high accuracy.
+
+
+In every position where the motor stays he should be dissabled.
+It´s important to save the motor position and to set a software max-endstop, otherwise de machanic could be damaged by a wrong command.  
